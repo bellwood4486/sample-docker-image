@@ -1,1 +1,1 @@
-# sample-docker-image
+# Sample Docker Image For Go
