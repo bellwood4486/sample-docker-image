@@ -1,6 +1,6 @@
-.PHONY: build run
+.PHONY: build run push
 
-NAME = sample-docker-image-go
+NAME = sample-go:cli
 TAG = bellwood4486/$(NAME)
 
 build:
@@ -8,3 +8,6 @@ build:
 
 run:
 	docker run -it --rm --name $(NAME) $(TAG)
+
+push:
+	docker push $(TAG)
