@@ -1,7 +1,7 @@
 .PHONY: build run push
 
-NAME = sample-go:cli
-TAG = bellwood4486/$(NAME)
+NAME = sample-go
+TAG = bellwood4486/$(NAME):cli
 
 build:
 	docker build -t $(TAG) .
